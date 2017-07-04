@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manshu.picstore.DownloadActivity">
+
+
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/imView"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Image Name"
+        android:id="@+id/dpImageName"
+
+        tools:layout_editor_absoluteY="318dp"
+        tools:layout_editor_absoluteX="110dp" />
+    <Button
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:text="Download"
+        android:id="@+id/buttonDownload"
+
+        tools:layout_editor_absoluteY="367dp"
+        tools:layout_editor_absoluteX="84dp" />
+</android.support.constraint.ConstraintLayout>
