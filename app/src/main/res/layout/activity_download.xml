@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.manshu.picstore.DownloadActivity">
 
 
@@ -14,20 +19,78 @@
         android:id="@+id/imView"
         tools:layout_editor_absoluteY="0dp"
         tools:layout_editor_absoluteX="0dp" />
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Image Name"
-        android:id="@+id/dpImageName"
 
-        tools:layout_editor_absoluteY="318dp"
-        tools:layout_editor_absoluteX="110dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/dpImageName"
+        android:gravity="center"
+        android:layout_below="@+id/details"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:id="@+id/sex"
+        android:layout_below="@+id/details"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Upload Image"
+        android:gravity="center"
+        android:id="@+id/age"
+        android:layout_below="@+id/details"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Upload Image"
+        android:gravity="center"
+        android:id="@+id/sym1"
+        android:layout_below="@+id/details"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Upload Image"
+        android:gravity="center"
+        android:id="@+id/percent"
+        android:layout_below="@+id/details"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Upload Image"
+        android:gravity="center"
+        android:id="@+id/caution"
+        android:layout_below="@+id/details"
+        android:layout_alignParentStart="true" />
+
     <Button
+        android:id="@+id/buttonConsult"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:text="Consult Doctor"
+        android:onClick="ConsultDoc"
+
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="367dp" />
+    <Button
+        android:id="@+id/buttonDownload"
         android:layout_width="152dp"
         android:layout_height="50dp"
         android:text="Download"
-        android:id="@+id/buttonDownload"
 
-        tools:layout_editor_absoluteY="367dp"
-        tools:layout_editor_absoluteX="84dp" />
-</android.support.constraint.ConstraintLayout>
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="367dp" />
+
+</LinearLayout>
+</ScrollView>

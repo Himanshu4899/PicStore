@@ -38,6 +38,9 @@ public class UploadActivity extends AppCompatActivity {
     private EditText txtImageName;
     private Uri imgUri;
     private Bitmap cbm;
+    private EditText sex;
+    private EditText age;
+    private EditText sym1;
     FirebaseUser firebaseUser;
     FirebaseAuth firebaseAuth;
 
@@ -55,6 +58,10 @@ public class UploadActivity extends AppCompatActivity {
 
         imageView = (ImageView) findViewById(R.id.imageView);
         txtImageName = (EditText) findViewById(R.id.txtImageName);
+        sex = (EditText) findViewById(R.id.sex);
+        age = (EditText) findViewById(R.id.age);
+        sym1 = (EditText) findViewById(R.id.symptom1);
+
 
     }
 
@@ -139,7 +146,7 @@ public class UploadActivity extends AppCompatActivity {
                     firebaseUser = firebaseAuth.getCurrentUser();
                     String email = firebaseUser.getEmail();
                     Toast.makeText(getApplicationContext(), "Image Uploaded",Toast.LENGTH_LONG).show();
-                    ImageUpload imageUpload = new ImageUpload(txtImageName.getText().toString(), taskSnapshot.getDownloadUrl().toString(),email);
+                    ImageUpload imageUpload = new ImageUpload(txtImageName.getText().toString(), taskSnapshot.getDownloadUrl().toString(),email,age.getText().toString(),sex.getText().toString(),sym1.getText().toString());
 
                     String uploadId = mDatabaseRef.push().getKey();
                     mDatabaseRef.child(uploadId).setValue(imageUpload);

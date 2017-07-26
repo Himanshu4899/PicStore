@@ -79,9 +79,15 @@ public class ImageListActivity extends AppCompatActivity {
                         Intent intent = new Intent(getApplicationContext(),DownloadActivity.class);
                        String url = imgList.get(i).getUrl();
                         String name = imgList.get(i).getName();
+                        String sex = imgList.get(i).getSex();
+                        String age = imgList.get(i).getAge();
+                        String sym1 = imgList.get(i).getSym1();
 
                         intent.putExtra("urls",url);
                         intent.putExtra("names",name);
+                        intent.putExtra("sex",sex);
+                        intent.putExtra("age",age);
+                        intent.putExtra("sym1",sym1);
                         startActivity(intent);
 
                     }

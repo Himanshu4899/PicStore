@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "592366156379",
+    "firebase_url": "https://picstore-492c0.firebaseio.com",
+    "project_id": "picstore-492c0",
+    "storage_bucket": "picstore-492c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592366156379:android:fdb31277c590a860",
+        "android_client_info": {
+          "package_name": "com.example.manshu.picstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592366156379-fapi95irq2tfn9chtg09q1i5unt1oimd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.manshu.picstore",
+            "certificate_hash": "a9849472881663265d1193ecc5900827dc335f18"
+          }
+        },
+        {
+          "client_id": "592366156379-n8d46k0rn68gqi913tvumenb13k4tij1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLksHxK6UPegv9U8GEbrvg3VomVtbtK9Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592366156379-n8d46k0rn68gqi913tvumenb13k4tij1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

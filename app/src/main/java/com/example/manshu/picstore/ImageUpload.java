@@ -11,6 +11,31 @@ public class ImageUpload {
     public String email;
     public String desc;
 
+    public String age;
+    public String sex;
+    public String sym1;
+    public String sym2;
+    public String sym3;
+
+    public String getAge() {
+        return age;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public String getSym1() {
+        return sym1;
+    }
+
+    public String getSym2() {
+        return sym2;
+    }
+
+    public String getSym3() {
+        return sym3;
+    }
     public String getDesc() {
         return desc;
     }
@@ -35,10 +60,14 @@ public class ImageUpload {
         return url;
     }
 
-    public ImageUpload(String name, String url,String email) {
+    public ImageUpload(String name, String url,String email,String age, String sex, String sym1) {
         this.name = name;
         this.url = url;
         this.email = email;
+        this.age=age;
+        this.sym1=sym1;
+        this.sex = sex;
+
     }
 
     public ImageUpload(){

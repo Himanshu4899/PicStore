@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PicStore</string>
+    <string name="title_activity_download">DownloadActivity</string>
+    <string name="title_activity_doctor_list">DoctorList</string>
+</resources>
